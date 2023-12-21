@@ -10,7 +10,7 @@ use pocketmine\player\Player;
 
 class Arena {
   
-  public static function create(String $name, int $posX1, int $posZ1, int $posX2, int $posZ2) : void {
+  public static function create(String $name = '', int $posX1 = 0, int $posZ1 = 0, int $posX2 = 0, int $posZ2 = 0) : void {
     if (file_exists(Main::getInstance()->getDataFolder().$name)) {
       return;
     }
